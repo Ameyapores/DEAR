@@ -50,10 +50,24 @@ pip install -e .
 wget https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip
 unzip DAVIS-2017-trainval-480p.zip
 rm DAVIS-2017-trainval-480p.zip
+```
 
 Train the agent:
 ```sh
-python sear/train.py task=distracting_walker_walk
+python dear/train.py task=distracting_walker_walk
+```
+To use WandB:
+```sh
+python dear/train.py task=distracting_walker_walk use_wandb=true wandb.run_name='WandB-Run-Name’
+```
+
+To use a different agent:
+```sh
+python dear/train.py task=distracting_walker_walk agent=drq-v2
+```
+To use a Temporal Disentanglement (TED) agent:
+```sh
+python dear/train_ted.py task=distracting_walker_walk agent=ted
 ```
 ## Citations
 
