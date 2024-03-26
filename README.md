@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3
 ```
 
-Export the following variables (It is recommended to put this into your bashrc or zshrc file)
+Export the following variables (It is recommended to put this into your bashrc file)
 ```sh
 export LD_LIBRARY_PATH=~/.mujoco/mujoco200/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia 
@@ -36,7 +36,7 @@ Install dependencies:
 # Clone this repo
 git clone git@github.com:sear-rl/sear-rl.git
 
-# Create a conda environment with all of the dependencies except for metaworld
+# Create a conda environment with all of the dependencies
 cd dear
 conda env create -f conda_env.yml
 conda activate dear
@@ -50,6 +50,10 @@ pip install -e .
 wget https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip
 unzip DAVIS-2017-trainval-480p.zip
 rm DAVIS-2017-trainval-480p.zip
+
+Train the agent:
+```sh
+python sear/train.py task=distracting_walker_walk
 ```
 ## Citations
 
