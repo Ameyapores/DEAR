@@ -51,3 +51,21 @@ wget https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.
 unzip DAVIS-2017-trainval-480p.zip
 rm DAVIS-2017-trainval-480p.zip
 ```
+## Citations
+
+Please cite the original DrQv2 and SEAR paper, upon which this code was started from:
+
+```
+@article{yarats2021drqv2,
+  title={Mastering Visual Continuous Control: Improved Data-Augmented Reinforcement Learning},
+  author={Denis Yarats and Rob Fergus and Alessandro Lazaric and Lerrel Pinto},
+  journal={arXiv preprint arXiv:2107.09645},
+  year={2021}
+}
+@article{gmelin2023efficient,
+  title={Efficient RL via disentangled environment and agent representations},
+  author={Gmelin, Kevin and Bahl, Shikhar and Mendonca, Russell and Pathak, Deepak},
+  journal={arXiv preprint arXiv:2309.02435},
+  year={2023}
+}
+```
