@@ -11,7 +11,7 @@ from models.encoder import PoolEncoder
 from models.random_shifts_aug import RandomShiftsAug
 
 
-class SEARAgent:
+class DEARAgent:
 
     def __init__(self, obs_shape, action_shape, device, lr, latent_dim,
                  feature_dim, hidden_dim, critic_target_tau, num_expl_steps,

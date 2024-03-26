@@ -1,0 +1,21 @@
+defaults:
+  - common
+  - _self_
+
+agent:
+  _target_: agents.ted.DEARAgent
+  reconstruction_loss_coeff: 1
+  ted: true
+  ted_loss_coeff: 100
+  ted_lr: 1e-3
+  decoder_lr: 1e-4
+  mask_lr: 1e-4
+  mask_loss_coeff: 0.25
+  latent_dim: ${latent_dim}
+  detach_critic: false # Prevent critic loss from backpropagating through encoder
+  detach_mask_decoder: false # Prevent mask losses from backpropagating through encoder
+  detach_reconstruction_decoder: false # Prevent reconstruction losses from backpropagating through encoder
+  split_latent: true # If false, use full latent for both mask decoder and reconstruction decoder
+
+add_segmentation_to_obs: true
+latent_dim: 4096
