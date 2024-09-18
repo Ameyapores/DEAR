@@ -37,7 +37,7 @@ Install dependencies:
 git clone https://github.com/Ameyapores/DEAR
 
 # Create a conda environment with all of the dependencies
-cd dear
+cd DEAR
 conda env create -f conda_env.yml
 conda activate dear
 
