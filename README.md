@@ -34,7 +34,7 @@ export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libffi.so.7
 Install dependencies:
 ```sh
 # Clone this repo
-git@github.com:Ameyapores/DEAR.git
+git clone https://github.com/Ameyapores/DEAR
 
 # Create a conda environment with all of the dependencies
 cd dear
